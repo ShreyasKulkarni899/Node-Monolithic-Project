@@ -1,0 +1,48 @@
+const allocationRouter = require("../../allocation/routes/allocation.routes.js");
+const customerRouter = require("../../customer/routes/customer.routes.js");
+const supplierRouter = require("../../supplier/routes/supplier.routes.js");
+const employeeRouter = require("../../employee/routes/employee.routes");
+const transportRouter = require("../../transport/routes/transport.routes.js");
+const storeRouter = require("../../store/routes/store.routes.js");
+const orderRouter = require("../../order/routes/order.routes.js");
+const productParameterRouter = require("../../parameter/routes/productParameters.routes.js");
+const dropdownListRouter = require("../../generalDropDownList/routes/dropdown.routes.js");
+const userRouter = require("../user/routes/user.routes.js");
+const counterRouter = require("../../counter/routes/counter.routes.js");
+
+const inventoryRouter = require("../../inventory/routes/inventory.routes.js");
+const parcelRouter = require("../../parcel/routes/parcel.routes.js");
+const purchaseReturnRouter = require("../../purchaseReturn/routes/purchaseReturn.routes.js");
+const purchaseRouter = require("../../purchase/routes/purchase.Routes.js");
+const imagesRouter = require("../media/images/router/imagesRouter");
+const discountRouter = require("../discountMargineInentive/routes/discount.routes.js");
+const dummyProductRouter = require("../../dummyProduct/routes/dummyProduct.routes.js");
+const productRouter = require("../../product/routes/product.routes.js");
+const tokenRouter = require("../token/routes/token.routes.js");
+const transferRouter = require("../../transfer/routes/transfer.routes.js");
+const inquiryRouter = require("../../inquiry/routes/inquiry.routes.js");
+
+module.exports = (app) => {
+  app.use("/allocation", allocationRouter);
+  app.use("/customer", customerRouter);
+  app.use("/supplier", supplierRouter);
+  app.use("/employee", employeeRouter);
+  app.use("/store", storeRouter);
+  app.use("/transport", transportRouter);
+  app.use("/order", orderRouter);
+  app.use("/productparameter", productParameterRouter);
+  app.use("/dropdownList", dropdownListRouter);
+  app.use("/user", userRouter);
+  app.use("/counter", counterRouter);
+  app.use("/parcel", parcelRouter);
+  app.use("/inventory", inventoryRouter);
+  app.use("/purchaseReturn", purchaseReturnRouter);
+  app.use("/purchase", purchaseRouter);
+  app.use("/images", imagesRouter);
+  app.use("/discount", discountRouter);
+  app.use("/dummyProduct", dummyProductRouter);
+  app.use("/product", productRouter);
+  app.use("/token", tokenRouter);
+  app.use("/transfer", transferRouter);
+  app.use("/inquiry", inquiryRouter);
+};

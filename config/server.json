@@ -1,0 +1,24 @@
+{
+    "DB": {
+        "HOST": "127.0.0.1",
+        "PORT": "27017",
+        "USERNAME": "geeta1",
+        "PASSWORD": "geeta2022",
+        "DATABASE": "geetadress",
+        "MONGOOSE": {
+            "useMongoClient": true,
+            "autoIndex": true,
+            "poolSize": 10,
+            "bufferMaxEntries": 0
+        },
+        "AUTH": true
+    },
+    
+    
+    "S3":{
+        "S3_BUCKET_NAME":"vedam-interns-project",
+        "S3_BUCKET_REGION":"ap-south-1",
+        "S3_ACCESS_KEY":"AKIAQISYZKPDBEKMCCNM",
+        "S3_SECRET_KEY":"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"
+    }
+}
